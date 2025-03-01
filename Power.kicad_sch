@@ -17,7 +17,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J4"
+			(property "Reference" "J1"
 				(at 0 20.32 0)
 				(effects
 					(font
@@ -43,7 +43,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+			(property "Datasheet" "${KIPRJMOD}/Datasheets/2171790001.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -77,6 +77,7 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
 			(property "Price" "€0.75"
@@ -85,6 +86,7 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
 			(symbol "2171790001_0_0"
@@ -171,7 +173,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at -17.78 0 0)
 					(length 5.08)
 					(name "VBUS1"
@@ -189,7 +191,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -17.78 -2.54 0)
 					(length 5.08)
 					(name "VBUS2"
@@ -279,7 +281,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 17.78 0 180)
 					(length 5.08)
 					(name "GND1"
@@ -297,7 +299,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 17.78 -2.54 180)
 					(length 5.08)
 					(name "GND2"
@@ -1361,25 +1363,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -12.7 8.62 0)
+			(property "Reference" "U4"
+				(at 0 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Value" "TLV1117LV33DCYR"
-				(at -12.7 -11.62 0)
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Footprint" "TLV1117LV33DCYR:VREG_TLV1117LV33DCYR"
+			(property "Footprint" "Footprints:VREG_TLV1117LV33DCYR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1389,7 +1389,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "${KIPRJMOD}/Datasheets/tlv1117lv.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1407,7 +1407,7 @@
 					(hide yes)
 				)
 			)
-			(property "DigiKey_Part_Number" "296-28778-2-ND"
+			(property "DigiKey_Part_Number" "296-28778-1-ND"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1417,103 +1417,21 @@
 					(hide yes)
 				)
 			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/TLV1117LV33DCYR/Texas+Instruments/view-part/?ref=snap"
+			(property "Manufacturer_Part_Number" "TLV1117LV33DCYR"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "1.80 mm"
+			(property "Price" "€0.21"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "SOT-223-4 Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/TLV1117LV33DCYR/Texas+Instruments/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "IPC-7351B"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PARTREV" "B"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MF" "Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "TLV1117LV33DCYR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "1-A, low-dropout voltage regulator"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
@@ -1547,7 +1465,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin power_out line
 					(at 17.78 5.08 180)
 					(length 5.08)
 					(name "OUT_2"
@@ -2523,6 +2441,18 @@
 		(uuid "5d991041-7b1d-4fa3-838c-50c06df859ee")
 	)
 	(junction
+		(at 110.49 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6184d867-9987-4fbf-9679-65d11e04dc7d")
+	)
+	(junction
+		(at 105.41 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61c9b44a-2ce1-467e-ad98-74c5348a0238")
+	)
+	(junction
 		(at 33.02 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2565,6 +2495,12 @@
 		(uuid "bc17dc9a-8117-4370-81f9-5f3c70c80f8f")
 	)
 	(junction
+		(at 66.04 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf56189c-2034-4fcc-9b13-43bf016b618d")
+	)
+	(junction
 		(at 74.93 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2593,10 +2529,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f36a8b7b-37e5-49ec-9ddd-f10fd79f6811")
-	)
-	(no_connect
-		(at 102.87 35.56)
-		(uuid "11da5b58-8010-4b56-b346-bdb564965751")
 	)
 	(no_connect
 		(at 59.69 35.56)
@@ -2820,6 +2752,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 30.48) (xy 66.04 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cecd812-d081-44bb-a089-44ba866572c7")
+	)
+	(wire
+		(pts
 			(xy 36.83 101.6) (xy 34.29 101.6)
 		)
 		(stroke
@@ -2980,6 +2922,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 31.75) (xy 110.49 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ed2e4c9-240c-4522-b1ee-e7a0fcb9d9ba")
+	)
+	(wire
+		(pts
 			(xy 74.93 124.46) (xy 74.93 127)
 		)
 		(stroke
@@ -3100,6 +3052,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 35.56) (xy 105.41 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "670e2ad1-3adb-44ff-81ba-fe40246f2b96")
+	)
+	(wire
+		(pts
 			(xy 85.09 64.77) (xy 100.33 64.77)
 		)
 		(stroke
@@ -3180,6 +3142,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 35.56) (xy 105.41 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7500c65d-ccef-47fa-a01b-30868f790020")
+	)
+	(wire
+		(pts
 			(xy 110.49 152.4) (xy 118.11 152.4)
 		)
 		(stroke
@@ -3240,17 +3212,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 33.02) (xy 114.3 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "804450bd-f473-4cff-be4c-333ece411d6a")
-	)
-	(wire
-		(pts
-			(xy 102.87 33.02) (xy 106.68 33.02)
+			(xy 102.87 33.02) (xy 105.41 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3450,6 +3412,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 33.02) (xy 66.04 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af6bac7e-48b5-4705-83fe-46ce5524837b")
+	)
+	(wire
+		(pts
 			(xy 36.83 33.02) (xy 33.02 33.02)
 		)
 		(stroke
@@ -3487,6 +3459,16 @@
 			(type default)
 		)
 		(uuid "b8112120-95cd-45a9-b81f-8019e8e578c0")
+	)
+	(wire
+		(pts
+			(xy 105.41 33.02) (xy 110.49 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba8b43d4-79fd-4c7a-8862-4d713329ac7d")
 	)
 	(wire
 		(pts
@@ -3537,6 +3519,16 @@
 			(type default)
 		)
 		(uuid "c773e1c5-d8f8-4046-baad-a1dbe096d528")
+	)
+	(wire
+		(pts
+			(xy 110.49 33.02) (xy 114.3 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c882cc56-1d8b-4784-a07e-72f590963db6")
 	)
 	(wire
 		(pts
@@ -3640,6 +3632,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 33.02) (xy 67.31 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaaa14e3-583b-42b3-a432-c06e0e3373e7")
+	)
+	(wire
+		(pts
 			(xy 34.29 114.3) (xy 25.4 114.3)
 		)
 		(stroke
@@ -3727,16 +3729,6 @@
 			(type default)
 		)
 		(uuid "f9402cc3-2ae4-4a7d-a34e-64b3d4111bf1")
-	)
-	(wire
-		(pts
-			(xy 59.69 33.02) (xy 67.31 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa247470-4f32-43d9-ba16-a295ebcd6da7")
 	)
 	(wire
 		(pts
@@ -4092,6 +4084,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "TPS61093DSKR"
@@ -4100,6 +4093,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "6"
@@ -4154,7 +4148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b804cc5-395d-49eb-bf9f-af285b405b1f")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR015"
 			(at 100.33 78.74 0)
 			(effects
 				(font
@@ -4204,7 +4198,104 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "#PWR014")
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 66.04 27.94 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1c99a120-072d-460d-a21a-669ee3a7c00c")
+		(property "Reference" "C8"
+			(at 68.58 29.2165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1uF"
+			(at 68.58 26.6765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 66.04 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 66.04 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "311-1445-1-ND"
+			(at 66.04 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CC0603KRX5R8BB105"
+			(at 66.04 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "€0.95"
+			(at 66.04 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "980d4758-23bf-41bb-9d4a-0c6331fb1efc")
+		)
+		(pin "2"
+			(uuid "4767c13c-6f65-4fb5-b4f1-c23e59e31c39")
+		)
+		(instances
+			(project "RFID_Device"
+				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -4269,6 +4360,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "DigiKey_Part_Number" "RNCP1206FTD1K00CT-ND"
@@ -4277,6 +4369,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "RNCP1206FTD1K00"
@@ -4285,6 +4378,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4360,6 +4454,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "DigiKey_Part_Number" "311-100KLRCT-ND"
@@ -4368,6 +4463,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "RC0402FR-07100KL"
@@ -4376,6 +4472,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4403,7 +4500,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2427f84d-a194-4eef-a2a5-d8c237e5915e")
-		(property "Reference" "C10"
+		(property "Reference" "C11"
 			(at 113.03 118.1035 0)
 			(effects
 				(font
@@ -4454,6 +4551,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "DigiKey_Part_Number" "1276-1244-1-ND"
@@ -4462,6 +4560,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL21A475KAQNNNE"
@@ -4470,6 +4569,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4481,7 +4581,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "C10")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -4497,7 +4597,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "26d6f8f2-7f14-40b5-bc5d-f326099b19c6")
-		(property "Reference" "C11"
+		(property "Reference" "C12"
 			(at 120.65 146.0435 0)
 			(effects
 				(font
@@ -4548,6 +4648,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CC0603KRX5R8BB105"
@@ -4556,6 +4657,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Price" "€0.95"
@@ -4564,6 +4666,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4575,7 +4678,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "C11")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -4653,6 +4756,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "SM02B-SRSS-TB"
@@ -4661,6 +4765,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4858,7 +4963,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e72d1f6-6edf-42b3-b437-59dc796efe73")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 102.87 67.3035 0)
 			(effects
 				(font
@@ -4909,6 +5014,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "DigiKey_Part_Number" "1276-6455-1-ND"
@@ -4917,6 +5023,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL21A106KOQNNNG"
@@ -4925,6 +5032,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4936,7 +5044,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -4952,7 +5060,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42bf14ce-7ae8-4d94-9151-7330ba819436")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR020"
 			(at 118.11 158.75 0)
 			(effects
 				(font
@@ -5002,7 +5110,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "#PWR018")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -5115,7 +5223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4769f670-2ca6-4f4b-aa00-c6e4bbe1c59d")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 184.15 137.1535 0)
 			(effects
 				(font
@@ -5166,6 +5274,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CC0603KRX5R8BB105"
@@ -5174,6 +5283,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Price" "€0.95"
@@ -5182,6 +5292,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5193,7 +5304,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "C14")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -5371,7 +5482,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4daaeaad-5988-43ef-ad20-4e6bee0b9885")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 171.4564 124.46 90)
 			(effects
 				(font
@@ -5420,6 +5531,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Price" "€0.48"
@@ -5428,6 +5540,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CC0603KRX7R8BB104"
@@ -5436,6 +5549,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5447,7 +5561,73 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "C13")
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 25.4 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e0271d4-6f27-45e1-9bc4-dc27bc92d0b8")
+		(property "Reference" "#PWR011"
+			(at 66.04 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.04 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7da12d88-3832-4a8e-a285-5a40542efa76")
+		)
+		(instances
+			(project "RFID_Device"
+				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5463,7 +5643,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5dc4b79d-74f7-4401-9dac-b24f10b07ed1")
-		(property "Reference" "C12"
+		(property "Reference" "C13"
 			(at 121.92 135.8835 0)
 			(effects
 				(font
@@ -5514,6 +5694,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Price" "€0.48"
@@ -5522,6 +5703,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CC0603KRX7R8BB104"
@@ -5530,6 +5712,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5541,7 +5724,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "C12")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -5557,7 +5740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e84d6c0-0b44-40b3-b9cb-0363737cfd90")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR021"
 			(at 165.1 154.94 0)
 			(effects
 				(font
@@ -5607,7 +5790,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "#PWR019")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5623,7 +5806,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63b3af72-030a-47db-91b7-ed0fedcf0e25")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR012"
 			(at 74.93 137.16 0)
 			(effects
 				(font
@@ -5673,7 +5856,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "#PWR011")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -5749,6 +5932,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Price" "€0.75"
@@ -5757,6 +5941,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "A5"
@@ -5958,7 +6143,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "761f1ce5-4f57-4486-9270-286ad597123c")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR014"
 			(at 88.9 83.82 0)
 			(effects
 				(font
@@ -6008,7 +6193,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "#PWR013")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -6090,7 +6275,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80dd06f9-b7ab-4ac0-bcde-868761036b54")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR017"
 			(at 102.87 96.52 0)
 			(effects
 				(font
@@ -6141,7 +6326,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "#PWR016")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -6163,6 +6348,7 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Value" "0.1uF"
@@ -6172,6 +6358,7 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
@@ -6207,6 +6394,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Price" "€0.48"
@@ -6215,6 +6403,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CC0603KRX7R8BB104"
@@ -6223,6 +6412,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6250,7 +6440,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "913338b7-c7ce-4a9b-87da-88b4bf078cae")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR019"
 			(at 110.49 129.54 0)
 			(effects
 				(font
@@ -6300,7 +6490,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "#PWR017")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -6364,6 +6554,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "DigiKey_Part_Number" "311-10KJRCT-ND"
@@ -6372,6 +6563,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "RC0402JR-0710KL"
@@ -6380,6 +6572,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6399,7 +6592,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 109.22 33.02 90)
+		(at 110.49 29.21 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6407,8 +6600,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a482dc4e-4216-4bf0-ab73-716a4e964ae0")
-		(property "Reference" "C9"
-			(at 109.2263 39.37 90)
+		(property "Reference" "C10"
+			(at 113.792 29.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6416,7 +6609,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 109.2263 36.83 90)
+			(at 114.3 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6424,7 +6617,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 109.22 33.02 0)
+			(at 110.49 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6433,7 +6626,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 109.22 33.02 0)
+			(at 110.49 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6442,7 +6635,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 109.22 33.02 0)
+			(at 110.49 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6451,7 +6644,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" "311-1445-1-ND"
-			(at 109.22 33.02 0)
+			(at 110.49 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6460,7 +6653,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "CC0603KRX5R8BB105"
-			(at 109.22 33.02 0)
+			(at 110.49 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6469,7 +6662,7 @@
 			)
 		)
 		(property "Price" "€0.95"
-			(at 109.22 33.02 0)
+			(at 110.49 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6486,7 +6679,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "C9")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -6617,6 +6810,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "DigiKey_Part_Number" "311-100KLRCT-ND"
@@ -6625,6 +6819,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "RC0402FR-07100KL"
@@ -6633,6 +6828,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6709,6 +6905,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "DigiKey_Part_Number" "311-2.70KFRCT-ND"
@@ -6717,6 +6914,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "RC1206FR-072K7L"
@@ -6725,6 +6923,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6801,6 +7000,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "DigiKey_Part_Number" "587-2045-1-ND"
@@ -6809,6 +7009,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "LBR2012T100K"
@@ -6817,6 +7018,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -6850,7 +7052,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "5.1K"
@@ -6894,6 +7095,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "DigiKey_Part_Number" "P5.1KDCCT-ND"
@@ -6902,6 +7104,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "ERA-2AEB512X"
@@ -6910,6 +7113,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6937,7 +7141,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7806a60-16a9-440d-9262-479314b8dce4")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR016"
 			(at 109.22 43.18 0)
 			(effects
 				(font
@@ -6988,7 +7192,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "#PWR015")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -7004,7 +7208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb8aeba3-cd97-4a53-aae0-dc3b9a5fe3af")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR022"
 			(at 173.99 157.48 0)
 			(effects
 				(font
@@ -7054,7 +7258,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "#PWR020")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -7070,7 +7274,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d726ccd8-b076-4cac-9f8f-22b6d85f6971")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR024"
 			(at 181.61 147.32 0)
 			(effects
 				(font
@@ -7120,7 +7324,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "#PWR022")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -7136,7 +7340,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db226ecf-e5a9-428a-b227-5a57227ce37d")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR013"
 			(at 90.17 106.68 0)
 			(effects
 				(font
@@ -7187,7 +7391,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "#PWR012")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -7203,7 +7407,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db866857-3637-4069-9e5b-e8245e96da2b")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR023"
 			(at 182.88 130.81 0)
 			(effects
 				(font
@@ -7254,7 +7458,7 @@
 		(instances
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
-					(reference "#PWR021")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -7414,6 +7618,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "DigiKey_Part_Number" "A129840CT-ND"
@@ -7422,6 +7627,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CRGCQ1206F330K"
@@ -7430,6 +7636,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7442,6 +7649,73 @@
 			(project "RFID_Device"
 				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 110.49 26.67 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2907c8a-bd29-4e46-ae3d-bf7c88be1163")
+		(property "Reference" "#PWR018"
+			(at 110.49 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.03 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a45460f-adc4-48b3-8712-8632e784541c")
+		)
+		(instances
+			(project "RFID_Device"
+				(path "/f4733a35-9ae9-40ca-bc69-86dc96557334/be10ba0e-b990-4cc7-a8f3-1836137b9d74"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -7463,7 +7737,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "5.1K"
@@ -7507,6 +7780,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "DigiKey_Part_Number" "P5.1KDCCT-ND"
@@ -7515,6 +7789,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "ERA-2AEB512X"
@@ -7523,6 +7798,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7716,6 +7992,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "DigiKey_Part_Number" "1276-6455-1-ND"
@@ -7724,6 +8001,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "CL21A106KOQNNNG"
@@ -7732,6 +8010,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7884,6 +8163,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "MCP73831-2ACI/MC"
@@ -7892,6 +8172,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "9"

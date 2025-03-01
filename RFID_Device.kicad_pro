@@ -72,12 +72,24 @@
           "Edited due to clearance violation on unused pad 11"
         ],
         [
+          "lib_footprint_mismatch|147162500|25775000|61dde01b-f740-4873-89b0-2c2ccebbbab6|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "lib_footprint_mismatch|154647500|64600000|06998669-40c0-428f-973b-88db482b33d6|00000000-0000-0000-0000-000000000000",
           "Edited due to clearance violation on unused pad 9"
         ],
         [
           "lib_footprint_mismatch|160975000|76820000|349cda96-753e-4b69-9344-64984e0d299e|00000000-0000-0000-0000-000000000000",
           "Edited to remove off-board silk"
+        ],
+        [
+          "solder_mask_bridge|121600033|62100407|311b971f-c1bf-44b0-8343-ad614e64f32d|12661952-6d73-42ee-968e-35fdd18cea9a",
+          "Same pad"
+        ],
+        [
+          "solder_mask_bridge|143100001|62100407|ff6322e7-40c9-4ff7-ab5c-5687d5caa767|a3ffdfd6-eac5-4365-aedb-2f799496a031",
+          "Same pad"
         ]
       ],
       "meta": {
@@ -160,7 +172,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.6,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -291,7 +303,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "power_pin_not_driven|622300|279400|d28bdd49-bc1e-4022-8bc3-b9934cb23466|00000000-0000-0000-0000-000000000000|/f4733a35-9ae9-40ca-bc69-86dc96557334/b59a840b-0db4-4dd4-af14-dad68e1751ca|/f4733a35-9ae9-40ca-bc69-86dc96557334/b59a840b-0db4-4dd4-af14-dad68e1751ca|",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },

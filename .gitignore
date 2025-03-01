@@ -4,3 +4,5 @@ fp-lib-table
 RFID_Device.pdf
 sym-lib-table
 ~*
+production
+*.pcb3d

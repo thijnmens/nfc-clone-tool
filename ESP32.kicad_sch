@@ -3602,6 +3602,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "ESP32-S3-MINI-1-N8"
@@ -3610,6 +3611,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "21"
